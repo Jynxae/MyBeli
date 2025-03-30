@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import foodOverlay from "./food-overlay.jpeg";
+import { IoIosArrowBack } from "react-icons/io";
 
 const page = () => {
   const router = useRouter();
@@ -28,9 +30,16 @@ const page = () => {
   };
   return (
     <main className="min-h-screen bg-green-50 flex flex-col items-center justify-center text-center px-6">
+      <button className="absolute top-20 left-18 z-10">
+        <Link href="\">
+          <IoIosArrowBack size={32} />
+        </Link>
+      </button>
       <div className="bg-white h-96 w-1/2 flex rounded-lg shadow-xl">
-        <div className="flex-1">
-          <h1 className="text-2xl font-bold text-green-800 pt-12">Sign-In</h1>
+        <div className="flex-1 flex flex-col items-center justify-center px-6">
+          <h1 className="text-2xl font-bold text-green-800 pt-12">
+            Welcome Back!
+          </h1>
           <input
             type="text"
             value={username}
@@ -47,18 +56,16 @@ const page = () => {
           />
           <button
             onClick={handleSignIn}
-            className="mt-6 bg-green-300 text-white px-6 py-3 rounded-full text-lg shadow-md"
+            className="mt-6 bg-green-300 text-white rounded-md px-6 py-3 rounded-full text-lg shadow-md"
           >
             Sign In
           </button>
+
+          <button className="mt-3 text-sm text-green-800">
+            Forgot Password?
+          </button>
         </div>
-        <div className="flex-2">
-          <Image
-            src={foodOverlay}
-            alt="Food overlay"
-            className="w-full h-full object-contain" //ehhhh bad pic...
-          />
-        </div>
+        <div className="flex-2 bg-green-200"> cover img here laterz</div>
       </div>
 
       <div className="absolute top-10 left-10 w-24 h-24 bg-green-200 rounded-full opacity-30"></div>

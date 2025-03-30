@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
@@ -7,7 +8,7 @@ export default function Page() {
     <main className="min-h-screen bg-green-50 flex flex-col items-center justify-center text-center px-6">
       <button className="absolute top-20 left-18 z-10">
         <Link href="\">
-          <IoIosArrowBack />
+          <IoIosArrowBack size={32} />
         </Link>
       </button>
 
