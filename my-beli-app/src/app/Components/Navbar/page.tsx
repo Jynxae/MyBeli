@@ -12,6 +12,7 @@ const page = () => {
     <div className="w-full h-20 top-0 bg-green-300 sticky relative">
       <div className="container mx-auto">
         <div className="flex justify-center items-center">
+          <h1 className="absolute left-12">Reem's Beli</h1>
           <ul className="flex gap-x-24 text-black mt-7">
             <li>
               <Link href="/HomeFeed">
