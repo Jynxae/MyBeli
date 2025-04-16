@@ -20,9 +20,6 @@ export default function Home() {
       <Link href="/Sign-In">
         <button className="pt-5">Sign-In</button>
       </Link>
-
-      <div className="absolute top-10 left-10 w-24 h-24 bg-green-200 rounded-full opacity-30"></div>
-      <div className="absolute bottom-10 right-10 w-32 h-32 bg-green-300 rounded-full opacity-20"></div>
     </main>
   );
 }

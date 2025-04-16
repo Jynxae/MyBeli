@@ -30,8 +30,8 @@ const page = () => {
   };
   return (
     <main className="min-h-screen bg-green-50 flex flex-col items-center justify-center text-center px-6">
-      <button className="absolute top-20 left-18 z-10">
-        <Link href="\">
+      <button className="absolute top-30 left-18 z-10">
+        <Link href="/Landing">
           <IoIosArrowBack size={32} />
         </Link>
       </button>
