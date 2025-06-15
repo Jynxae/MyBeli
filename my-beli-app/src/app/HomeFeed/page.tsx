@@ -8,7 +8,7 @@ const page = () => {
   const posts = Array.from({ length: 20 }, (_, i) => ({
     id: i,
     username: `user${i}`,
-    restaurant: `resaurant${i}`,
+    restaurant: `resaurant ${i}`,
     location: "Houston, TX",
     content: `This is a food review number ${i}`,
   }));

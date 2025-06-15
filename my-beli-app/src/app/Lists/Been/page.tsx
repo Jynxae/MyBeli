@@ -40,6 +40,7 @@ const BeenPage = () => {
   const [locationFilter, setLocationFilter] = useState("All");
   const [ratingFilter, setRatingFilter] = useState("All");
   const [priceFilter, setPriceFilter] = useState("All");
+  const [cuisineFilter, setCusineFilter] = useState("All");
 
   const filteredPlaces = allPlaces.filter((place) => {
     const matchLocation =
